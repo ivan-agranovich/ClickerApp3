@@ -2,6 +2,7 @@ import { useState } from 'react'
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
 import appleImg from '/apple-97.png'
+import coinImg from '/coin.png'
 import './App.css'
 
 //import WebApp from '@twa-dev/sdk'
@@ -11,38 +12,26 @@ function App() {
 
   return (
     <>
-      <div>
-        {/* <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a> */}
-      <button onClick={() => setCount((count) => count + 1)} className="btn-f">
-        <img src={appleImg} className="logo react" alt="Click here" />
-      </button>
+      <header></header>
+      <div className='counter'>
+        <img src={coinImg} /> <span>{count}</span>
+      </div>
+      <div className='content'>
+       
+        <img src={appleImg} className="logo react" alt="Click here"  onClick={() => setCount((count) => count + 1)} onTouchStart={() => setCount((count) => count + 1)} />
+      
 
       </div>
-      {/* <h1>Vite + React</h1> */}
-      <div className="card">
-        {/* <button onClick={() => setCount((count) => count + 1)}> */}
-          count is {count}
-        {/* </button> */}
-        {/* <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p> */}
-      </div>
+      <footer>
+        <div className='btn-group'>
+            <button type='button'><img src='/frenz.svg' /><span>Друзья</span></button>
+            <button type='button'><img src='/rating.svg' /><span>Рейтинг</span></button>
+            <button type='button'><img src='/tasks.svg' /><span>Задания</span></button>
+            <button type='button'><img src='/boosts.svg' /><span>Бусты</span></button>
+        </div>
+      </footer>
 
-      {/* Here we add our button with alert callback */}
-      {/* <div className="card">
-        <button onClick={() => WebApp.showAlert(`Hello World! Current count is ${count}`)}>
-            Show Alert
-        </button>
-      </div>
-
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
+      
     </>
   )
 }
