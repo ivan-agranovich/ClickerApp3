@@ -7,7 +7,7 @@
 }
 
 .content{
-  height: 70vh;
+  height: 65vh;
   min-height: 22em;
   display: flex;
   align-items: center;
@@ -47,6 +47,11 @@ footer{
 }
 .btn-group{
   display: flex;
+}
+
+
+button,button:hover,button:active,button:focus,button:focus-visible,button:focus-within{
+  color:#000;
 }
 
 .btn-group button{
