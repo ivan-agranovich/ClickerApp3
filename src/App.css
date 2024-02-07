@@ -65,12 +65,12 @@ button,button:hover,button:active,button:focus,button:focus-visible,button:focus
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     flex: 0 0 23.9vw;
 
 }
 .btn-group button img{
-  max-height: 30px;
+  max-height: 21px;
 }
 .btn-group button span{
   margin-top: 10px;
