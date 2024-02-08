@@ -16,6 +16,12 @@ import WebApp from '@twa-dev/sdk'
 function App() {
   const [count, setCount] = useState(0)
 
+  WebApp.onEvent('popupClosed', function(e){
+    console.log(e);
+    alert('Popup closed');
+  });
+
+
   return (
     <>
       <header></header>
@@ -37,7 +43,7 @@ function App() {
         </div>
       </footer>
 
-      <div className='user-data-container'>
+      {/* <div className='user-data-container'>
       id = {WebApp.initDataUnsafe?.user?.id}<br/>
        is_bot = {WebApp.initDataUnsafe?.user?.is_bot}<br/>
        username = {WebApp.initDataUnsafe?.user?.username}<br/>
@@ -45,7 +51,7 @@ function App() {
        last_name = {WebApp.initDataUnsafe?.user?.last_name}<br/>
        photo_url = {WebApp.initDataUnsafe?.user?.photo_url}<br/>
 
-      </div>
+      </div> */}
 
       
     </>
