@@ -40,6 +40,7 @@ function App() {
       <div className='user-data-container'>
       id = {WebApp.initDataUnsafe?.user?.id}<br/>
        is_bot = {WebApp.initDataUnsafe?.user?.is_bot}<br/>
+       username = {WebApp.initDataUnsafe?.user?.username}<br/>
        first_name = {WebApp.initDataUnsafe?.user?.first_name}<br/>
        last_name = {WebApp.initDataUnsafe?.user?.last_name}<br/>
        photo_url = {WebApp.initDataUnsafe?.user?.photo_url}<br/>
